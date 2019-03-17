@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+/*importa a fonte (origem google)*/
+
+@font-face {
+	/* cria uma fonte face*/
+	font-family: 'fontLogo';
+	/*Apelido da fonte*/
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+	/*pega a fonte no arquivo*/
+
+}
+
+body {
+	/*corpo*/
+	background-color: #00afef;
+	/*aplica cor de fundo no corpo*/
+	color: rgba(0, 0, 0, 1);
+	/*aplica cor nos caracteres do corpo*/
+	font-family: Arial, sans-serif;
+}
+
+p {
+	/*Todos os paragrafos da pagina*/
+	text-align: justify;
+	text-indent: 50px;
+}
+
+a {
+	/*todos os links da pagina*/
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	/*sublinhado*/
+	/*
+	background-color: #808080;
+	color: #ffffff;
+	padding: 2px 2px 2px 2px;
+	margin: 2px 2px 2px 2px;
+	*/
+}
+
+/*Aula 15*/
+div#inteface {
+	width: 900px;
+	background-color: aliceblue;
+	margin: -17px auto 10px auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	padding: 10px 10px 10px 10px;
+}
+
+/*Aula 15*/
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 190px;
+	top: -50px;
+	width: 280px;
+	height: 230px;
+	padding: 10px;
+	
+}
+
+/*Aula 16*/
+header#cabecalho {
+	/*linha para separar o cabeçalho e menu do corpo*/
+	border-bottom: 1px #606060 solid;
+	/*linha separadora*/
+	height: 150px;
+	/*background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;*/
+}
+
+/*Aula 16*/
+header#cabecalho h1 {
+	font-family: 'fontLogo', sans-serif;
+	font-size: 30pt;
+	color: 606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	padding: 0px;
+}
+
+/*Aula 16*/
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0px;
+
+}
+
+/*Formatação de imagens com legenda*/
+/*Aula 10*/
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	max-width: 300px;
+	width: auto;
+}
+
+/*Aula 10*/
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+/*Aula 10*/
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+/*Aula 10*/
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/*Formatação do Menu*/
+
+
+/*==============================================N A V - M E N U =================================================*/
+/*Aula 13*/
+nav#menu {
+	display: block;
+}
+
+/*Aula 13*/
+nav#menu ul {
+	list-style: none;
+	/*retira os marcadores
+	text-transform: uppercase;*/
+	/*Caixa alta no menu*/
+	position: absolute;
+	/*Pode ser posicionado em qualquer parte do site*/
+	top: 10px;
+	left: 495px;
+}
+
+/*Aula 13*/
+nav#menu li {
+	display: inline-block;
+	/*Menu fina na horizontal*/
+	background-color: #dddddd;
+	/*Cor de fundo*/
+	padding: 10px;
+	/*Cria um espaço entre a palavra e margem da cor de fundo*/
+	margin: 2px;
+	/*Cria um espaço entre a cor de fundo*/
+}
+
+/*Aula 13*/
+nav#menu h1 {
+	display: none;
+	/*Escondendo o texto menu principal*/
+}
+
+/*Aula 14*/
+nav#menu li:hover {
+	/*houver = metodo ao passar o mause*/
+	background-color: #606060;
+	/*Muda a cor de fundo do menu ao passar o mause*/
+	transition: background-color 1s;
+	/*Faz uma transição ao mudar a cor de fundo*/
+}
+
+/*Aula 14*/
+nav#menu a {
+	/*Altera o texto do menu*/
+	color: #000000;
+	/*Muda a cor*/
+	text-decoration: none;
+	/*Retira o sublinhado*/
+}
+
+/*Aula 14*/
+nav#menu a:hover {
+	color: #ffffff;
+	/*muda a cor do texto*/
+	text-decoration: underline;
+	/*Sublinha o texto*/
+}
+
+/*==============================================N A V - M E N U =================================================*/
+
+section#corpo {
+	display: block;
+	/*torna a section um bloco*/
+	/*width: 500px;
+	 move o bloco*/
+	/*float: left;
+	faz o bloco flutuar a esquerda*/
+	/*border-right: 1px solid #606060;
+	Cria uma linha solida a direita*/
+	/*padding-right: 15px;
+	cria um espaçamento entre o bloco e a linha*/
+}
+/*===========================A R T I C L E ============================*/
+
+
+article#noticiaPrincipal p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/*position: absolute;
+	left: 175px;
+	top: -50px;
+	width: 400px;
+	height: 300px;
+	margin:0 15px 10px 0;*/
+
+article#noticiaPrincipal img#imgfachada {
+	float: left;
+	margin:0 15px 10px 0;
+	
+}
+article#noticiaPrincipal h2 {
+
+	font-size: 13pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+/*===========================A R T I C L E ============================*/
+
+header#cabecalhoArtigo h1 {
+	font-family: 'fontLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	margin-border-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalhoArtigo h2 {
+	font-size: 13pt;
+	color: #a2a2a2;
+	background-color: #ffffff;
+}
+
+header#cabecalhoArtigo h3 {
+	font-size: 12pt;
+	color: #cecece;
+
+}
+
+.direita {
+	text-align: right;
+}
+
+aside#lateral {
+	display: block;
+	/*torna o aside um bloco*/
+	width: 350px;
+	/* move o bloco*/
+	float: right;
+	/*faz o bloco flutuar a direita*/
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lateral h1 {
+	font-family: 'fontLogo';
+	font-size: 20pt;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	pading: 5px;
+}
+
+/*===========================================================RODAPE=========================================================*/
+
+footer#rodape {
+	clear: both;
+	/*Limpe a configuração(divisão que foi feita na section e na aside) dos dois lados*/
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;
+	/*Centraliza*/
+}
+
+footer#rodape a {
+	background-color: #dddddd;
+	/*Cor de fundo*/
+	padding: 1px;
+	/*Cria um espaço entre a palavra e margem da cor de fundo*/
+	margin: 1px;
+	/*Cria um espaço entre a cor de fundo*/
+	text-decoration: none;
+}
+
+footer#rodape a:hover {
+	color: #ffffff;
+	/*muda a cor do texto*/
+	text-decoration: underline;
+	/*Sublinha o texto*/
+	background-color: #606060;
+	/*Cor de fundo*/
+}
+
+/*============================================= R O D A P E - FIM =========================================================*/
+
+/*================================================= T A B E L A ===========================================================*/
+
+/*Formatação da tabelaSpec*/
+table#tabelaSpec {
+	border: 1px solid #606060;
+	/*especificações da borda da tabela*/
+	border-spacing: 0px;
+	/*espaçamento da borda da tabela*/
+	margin-left: auto;
+	/*margem esquerda da tabela: auto*/
+	margin-right: auto;
+	/*margem direita ta tabela: auto*/
+}
+
+table#tabelaSpec td {
+	border: 1px solid #606060;
+	/*especificações da borda dos <td>s*/
+	padding: 10px;
+	/*espaçamento dos <td>s*/
+	text-align: right;
+	/*alinhamento dos <td>s*/
+}
+
+table#tabelaSpec td.ce {
+	color: #ffffff;
+	/*cor da fonte */
+	background-color: #606060;
+	/*cor do fundo*/
+	vertical-align: top;
+	/*alinamento vertical do texto na tabela*/
+	font-weight: bold;
+	/*Negrito*/
+}
+
+table#tabelaSpec td.cd {
+	background-color: #cecece;
+	/*cor do fundo*/
+	text-align: center;
+	/*alinhamento do texto dentro da tabela*/
+}
+
+table#tabelaSpec caption {
+	color: #888888;
+	/*cor da fonte*/
+	font-size: 13pt;
+	/*tamanho da fotne*/
+	font-weight: bolder
+		/*negrito*/
+}
+
+table#tabelaSpec caption span {
+	display: bloc;
+	/*transforma em bloco*/
+	float: right;
+	/*flutua o bloco para direita*/
+	color: #000000;
+	/*cor da fonte*/
+	font-size: 8pt;
+	/*tamanho da fonte*/
+	margin-top: 10px;
+	/*aumenta a margem superior para "empurrar o texto"*/
+}
+/*================================================= T A B E L A  - FIM======================================================*/
+
+/*Animação da Foto fachada - aumenta de tamanho, com borda.==============================================*/
+img#imgfachada {
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.4s ease-in;
+
+}
+
+img#imgfachada:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+	-webkit-transform: scale(1.5);
+}
+/*Animação da Foto fachada - aumenta de tamanho, com borda.==============================================*/
