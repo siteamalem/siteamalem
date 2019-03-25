@@ -1,7 +1,10 @@
 body {
     margin: 0;
-    background-image: url("/_imagens/backgraundAutismo.jpg")
-    
+}
+
+body img#bakgraund {
+    width: auto;
+    height: auto;
 }
 
 #folha {
