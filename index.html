@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="_css/estilo.css" />
+    <title>AMA-LEM Associação dos Amigos do Autista</title>
+</head>
+
+<body>
+    <div id="folha">
+
+        <!--Cabeçalho da página-->
+        <header id="cabecalho">
+
+            <!--Logo-->
+            <div id="logo">
+                <img src="_imagens/logoFundoTransparente.png" />
+            </div>
+
+
+            <hgroup>
+                <h1></h1>
+                <!--<img src="_imagens/fachadaAmaWeb.JPG"/>-->
+            </hgroup>
+
+        </header>
+
+        <!--Menu-->
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="autismo.html">Autismo</a></li>
+                <li><a href="downloads.html">Dowloads</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="parceiros.html">Parceiros</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+            </ul>
+        </nav>
+
+
+        <!--Carousel-->
+        
+        <nav id="carousel">
+            <img class="mySlides" src="_imagens/carousel04.jpg">
+            <img class="mySlides" src="_imagens/carousel02.jpg">
+            <img class="mySlides" src="_imagens/carousel05.jpg">
+            <img class="mySlides" src="_imagens/carousel06.jpg">
+        </nav>
+
+        <!--Informação principal-->
+        <section id="principal">
+            <!--Tabela con informações AMA LEM-->
+            <article>
+                <p>
+                    <h2>Identificação da Entidade</h2>
+                    <table id="tabelaSpec">
+                        <caption><span>Mar/2019</span></caption>
+                        <tr>
+                            <td class="ce">CNPJ</td>
+                            <td class="cd">25.353.683/0001-91</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Inscrição Municipal</td>
+                            <td class="cd">99.015.618</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Endereço</td>
+                            <td class="cd">Rua Dorival Caymi, 490 Qd. 38 Lt 04 Bairro Mimoso I</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Presidente</td>
+                            <td class="cd">Daniela Lopes da Silva Defante (77) 9 9136-3478</td>
+                        </tr>
+                        <tr>
+                            <td class="ce">Diretora</td>
+                            <td class="cd">Cintia Silva (77) 9 9993-3478</td>
+                        </tr>
+                    </table>
+                </p>
+
+
+            </article>
+            <!--Porque do nome AMA LEM-->
+            <article>
+                <h2>O porquê do nome AMA?</h2>
+                <p>
+                    AMA é abreviação de Associação de Amigos do Autista em todo Brasil.
+                </p>
+                <p>
+                    A AMA é para o autista, assim
+                    como
+                    a
+                    APAE é para o Excepcional.
+                </p>
+                <p>
+                    A Associação Brasileira de Autismo (ABRA) que nos orientou a utilizar
+                    esta
+                    Razão
+                    Social e esse nome de fantasia.
+                </p>
+            </article>
+            <!--Objetivos da AMA LEM-->
+            <article>
+                <p>
+                    <h2>Objetivos</h2>
+
+                    </br>
+                    <b>Objetivos em Curto e Médio Prazo:</b></br>
+                    </br>
+                    <ul style="list-style-type:circle;">
+                        <li class="item">Proporcionar atendimentos multiprofissionais;</li>
+                        <li>Estrutura física e profissionais qualificados para atender de 70 a 100 crianças;</li>
+                        <li>Apoio profissional para pais e responsáveis;</li>
+                        <li>Proporcionar cursos e palestras sobre autismo;</li>
+                        <li>Inclusão escolar.</li>
+                    </ul>
+
+                    </br>
+                    <b>Objetivos em Longo Prazo:</b></br>
+                    </br>
+
+                    <ul style="list-style-type:circle;">
+                        <li>Clínica Escola – no contra turno da escola regular a criança frequentará Associação,
+                            recebendo toda estimulação necessária;</li>
+                        <li>Programa de Estagiários de Psicologia, Pedagogia e Psicopedagogia;</li>
+                        <li>Sede própria para atender até 200 crianças;</li>
+                        <li>Equoterapia, musicoterapia, fisioterapia, capoterapia e natação.</li>
+                    </ul>
+                </p>
+
+            </article>
+        </section>
+
+        <!--Informação Lateral-->
+        <aside id="lateral">
+            <article id="informacao1">
+                <p>
+                    Doe
+                </p>
+                <p>
+                    Seja um <a href="/doacao.html">apoiador</a>.
+                </p>
+            </article>
+
+        </aside>
+
+        <!--Rodapé-->
+        <footer id="rodape">
+
+        </footer>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>

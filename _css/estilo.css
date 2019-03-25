@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    background-image: url("/_imagens/backgraundAutismo.jpg")
+    
+}
+
+#folha {
+    position: relative;
+    width: 900px;
+    height: 2100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(207, 221, 235);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 50px 10px #5747b4 inset;
+}
+p { /*Todos os paragrafos da pagina*/
+	text-align: justify;
+    text-indent: 50px;
+    font-size: 15pt;
+}
+
+div#logo {
+    width: 800px; height: 350px;
+}
+
+div#logo img {
+    width: 800px; height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+header#cabecalho h1 {
+    padding: 20px;
+
+}
+/*
+nav#menu {
+    position: fixed;
+    top: 1px;
+    margin-left: 73px;
+    margin-top: 50px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+nav#menu a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav#menu :hover{
+    background-color: rgba(38, 40, 156, 0.726);
+
+}
+
+nav#menu ul {
+    margin: 0px;
+    list-style: none;
+    text-transform: uppercase;
+    padding-left: 5px;
+    
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 950;
+}
+*/
+
+nav#menu {
+    position: fixed;
+    top: 1px;
+    margin-left: 60px;
+    margin-top: 60px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+nav#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(59, 168, 241, 0.61);
+  }
+  
+nav#menu li {
+    float: left;
+  }
+  
+nav#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+nav#menu li a:hover {
+    background-color: rgba(32, 19, 209, 0.774);
+    background: -webkit-gradient(linear, left top, right top, from(#eecbde), to(#ec268f)) no-repeat;
+  }
+
+nav#carousel {
+    border-right: none;
+    border-left: none;
+    
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    margin: 30px;
+    padding: 20px;
+
+}
+
+nav#carousel img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+section#principal {
+
+    display: block; /*torna a section um bloco*/
+	width: 500px; /* move o bloco*/
+	float: left; /*faz o bloco flutuar a esquerda*/
+    border-right: 1px solid #606060; /*Cria uma linha solida a direita*/
+    padding-right: 10px; /*cria um espaçamento entre o bloco e a linha*/
+    padding-left: 10px;
+}
+
+section#principal h2 {
+    font-size: 16pt;
+    color: #000000;
+    background-color: #90bbec;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+section#principal li {
+    font-size: 15pt;
+}
+
+
+  /*Formatação da tabelaSpec*/
+table#tabelaSpec {
+	border: 1px solid #606060;
+	/*especificações da borda da tabela*/
+	border-spacing: 0px;
+	/*espaçamento da borda da tabela*/
+	margin-left: auto;
+	/*margem esquerda da tabela: auto*/
+	margin-right: auto;
+	/*margem direita ta tabela: auto*/
+}
+
+table#tabelaSpec td {
+	border: 1px solid #606060;
+	/*especificações da borda dos <td>s*/
+	padding: 10px;
+	/*espaçamento dos <td>s*/
+	text-align: right;
+	/*alinhamento dos <td>s*/
+}
+
+table#tabelaSpec td.ce {
+	color: #ffffff;
+	/*cor da fonte */
+	background-color: #246888;
+	/*cor do fundo*/
+	vertical-align: top;
+	/*alinamento vertical do texto na tabela*/
+	font-weight: bold;
+	/*Negrito*/
+}
+
+table#tabelaSpec td.cd {
+	background-color: #d3eefad2;
+	/*cor do fundo*/
+	text-align: center;
+	/*alinhamento do texto dentro da tabela*/
+}
+
+table#tabelaSpec caption {
+	font-size: 13pt;
+	/*tamanho da fotne*/
+	font-weight: bolder;
+        /*negrito*/
+    text-align: left;
+}
+
+table#tabelaSpec caption span {
+	display: bloc;
+	/*transforma em bloco*/
+	float: right;
+	/*flutua o bloco para direita*/
+	color: #000000;
+	/*cor da fonte*/
+	font-size: 8pt;
+	/*tamanho da fonte*/
+	margin-top: 10px;
+	/*aumenta a margem superior para "empurrar o texto"*/
+}
+
+aside#lateral {
+    display: block; /*torna o aside um bloco*/
+	width: 320px; /* move o bloco*/
+	float: right; /*faz o bloco flutuar a direita*/
+	background-color: #1f0a96;
+	padding: 5px;
+	margin-right: 20px;
+    box-shadow: 10px 15px 15px rgba(0,0,0,0.5);
+    background: -webkit-gradient(linear, left top, right top, from(#a7a2c4), to( #1f0a96)) no-repeat;
+}
+
+aside#lateral article#informacao1 {
+    color: #ffffff;
+    font-size: 25pt;
+    padding: 10px;
+    
+}
+aside#lateral article#informacao1 a {
+    color: #120752;
+    font-style: oblique;
+    font-weight: bolder;
+    
+}
