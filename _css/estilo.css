@@ -24,15 +24,19 @@ p { /*Todos os paragrafos da pagina*/
     font-size: 15pt;
 }
 
-header#cabecalho h1 {
-    padding: 20px;
-
-}
-
 nav#menu {
     position: absolute;
-    margin: 10px;
+    margin: 20px;    
+    margin-left: 70px;
 }
+
+@-moz-document url-prefix() {
+    nav#menu {
+        position: absolute;
+        margin: 10px;    
+        margin-left: 10px;
+    }
+ }
 
 nav#menu ul {
     list-style-type: none;
@@ -47,7 +51,6 @@ nav#menu li {
   }
   
 nav#menu li a {
-    display: block;
     color: white;
     text-align: center;
     font-size: 15pt;
